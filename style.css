@@ -46,3 +46,34 @@
     grid-column-start: 4;
     grid-column-end: 6;
 }
+
+.pageGrid {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'a b'
+                         'a footer';
+    grid-template-rows: 30vh 1fr auto;
+    grid-template-columns: 150px 1fr;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: brown;
+}
+
+.section1 {
+    grid-area: a;
+    background-color: antiquewhite;
+}
+
+.section2 {
+    grid-area: b;
+    background-color: darkgreen;
+}
+
+footer {
+    grid-area: footer;
+    background-color: darkkhaki;
+    height: 500px;
+}
